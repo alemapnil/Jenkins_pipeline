@@ -7,9 +7,8 @@ pipeline{
     stages{
         stage('init'){
             steps{
-                echo "即將抓遠端分支"
+                echo "此為Git上的Jenkinsfile"
                 git branch: 'main', credentialsId: '7c359d4c-fd1b-49df-97df-7867f3e19e0f', url: 'https://github.com/alemapnil/Jenkins_pipeline.git'
-                echo "抓下來了"
                 sh 'dos2unix *.sh'
                 sh 'chmod +x *.sh'
                 sh 'pwd'
