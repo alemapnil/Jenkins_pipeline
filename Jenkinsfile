@@ -1,7 +1,7 @@
-// 以下是在名為wsl_node_1的node上，建置pipeline的Jenkinsfile
+// 以下是在名為192.168.1.83 的node上，建置pipeline的Jenkinsfile
 pipeline{
     agent {
-        label 'wsl_node_1'
+        label '192.168.1.83 '
     }
     stages{
         stage('init'){
