@@ -1,5 +1,4 @@
 // 以下是在名為wsl_node_1的node上，建置pipeline的Jenkinsfile
-
 pipeline{
     agent {
         label 'wsl_node_1'
